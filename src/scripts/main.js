@@ -25,7 +25,7 @@ const contaHoras = setInterval(function () {
         ". minutos: ", minutosAteEvento, 
         ". segundos: ", segundosAteEvento, ".");
 
-        document.getElementById('counter').innerHTML = `começa em ${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`
+        document.getElementById('counter').innerHTML = `in ${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`
 
         if (diasAteEvento < 0) {
             clearInterval(contaHoras);
