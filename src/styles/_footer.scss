@@ -1,0 +1,10 @@
+@use 'variables';
+
+.footer {
+    background-color: variables.$secondaryTextColor;
+    color: black;
+
+    .container {
+        
+    }
+}

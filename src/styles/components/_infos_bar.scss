@@ -1,0 +1,46 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$background;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos {
+
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$textColor;
+
+            b {
+                color: variables.$textColor;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    
+
+    @media (max-width: 640px) { // celular
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) { // tablet
+        
+        &__infos {
+            gap: 16px;    
+        }
+    }
+}
