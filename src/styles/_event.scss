@@ -1,9 +1,13 @@
 @use 'variables';
 
 .event {
+    position: relative;
 
+    .container {
+        display: flex;
+        gap: 40px;
+    }
 
-    
     &--friends {
         background-image: linear-gradient(variables.$color2, variables.$color2);
     }
@@ -18,17 +22,6 @@
 
     &--music {
         background-image: linear-gradient(variables.$color2, variables.$color2);
-    }
-
-    &--image-left {
-        .container {
-            flex-direction: row-reverse;
-        }
-    }
-
-    .container {
-        display: flex;
-        gap: 40px;
     }
 
     &__image {
@@ -48,6 +41,12 @@
 
         &--music {
             transform: rotate(-2deg);
+        }
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
         }
     }
 
@@ -73,23 +72,7 @@
         }
     }
 
-    &__details {
-
-
-        &__title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 16px;
-        }
-
-        &__description {
-            // font-size: 16px;
-            line-height: 22px;
-        }
-    }
-
     &__title {
-
         display: flex;
         flex-direction: column;
         align-items: center;
