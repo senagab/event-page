@@ -81,6 +81,12 @@
         &__item {
             font-size: 72px;
             color: variables.$textColor;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            .dud {
+                opacity: 0.5;
+            }
         }
     }
 
