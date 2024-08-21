@@ -96,8 +96,7 @@ class TextScramble {
     'we`re',
     'having',
     'a fire',
-    'this tuesday',
-    'you in?',
+    'you in?'
     ]
 
     const el = document.querySelector('.event__title__item')
