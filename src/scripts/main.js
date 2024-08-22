@@ -29,7 +29,7 @@ const contaHoras = setInterval(function () {
 
         if (diasAteEvento < 0) {
             clearInterval(contaHoras);
-            document.getElementById('counter').innerHTML = `expirou!`
+            document.getElementById('counter').innerHTML = `next time!`
         }
 }, 1000);
 
