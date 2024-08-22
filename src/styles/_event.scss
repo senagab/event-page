@@ -52,7 +52,9 @@
     &__description {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
+        font-size: 25px;
+        letter-spacing: 5;
 
         &--friends {
             transform: rotate(2deg);
@@ -76,6 +78,7 @@
         flex-direction: column;
         align-items: center;
         padding: 70px 0;
+        letter-spacing: -5;
 
         &__item {
             font-size: 72px;

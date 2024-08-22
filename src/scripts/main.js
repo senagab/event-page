@@ -92,22 +92,28 @@ class TextScramble {
     // Example
     // ——————————————————————————————————————————————————
 
-    const phrases = [
+    const phrases_title = [
     'we`re',
     'having',
     'a fire',
     'you in?'
     ]
 
-    const el = document.querySelector('.event__title__item')
-    const fx = new TextScramble(el)
+    const phrases_text_friends = [
+        
+    ]
+
+    const title = document.querySelector('.event__title__item')
+    const fx = new TextScramble(title)
 
     let counter = 0
     const next = () => {
-    fx.setText(phrases[counter]).then(() => {
+    fx.setText(phrases_title[counter]).then(() => {
         setTimeout(next, 800)
     })
-    counter = (counter + 1) % phrases.length
+    counter = (counter + 1) % phrases_title.length
     }
+
+
 
     next()
