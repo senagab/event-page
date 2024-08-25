@@ -1,5 +1,62 @@
 @use 'variables';
 
+@mixin stripe-flex() {
+    display: flex;
+    background-color: variables.$secondaryTextColor;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+@mixin text($fontsize: 10px){
+    font-family: 'Offbit';
+    font-size: $fontsize;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 6rem;
+}
+
 .stripe {
-    // style
+
+    &__wrapper{
+        @include stripe-flex;
+
+        &--ltr {
+            padding-top: 1rem;
+        }
+
+        &__text {
+
+            &--rtl {
+                animation: move-rtl 6000ms linear infinite;
+                @include text(80px);
+                color: variables.$textColor;
+                letter-spacing: 5px;
+                @keyframes move-rtl {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+        
+            &--ltr {
+                animation: move-ltr 6000ms linear infinite;
+                @include text;
+                color: white;
+                stroke: none;
+                letter-spacing: 20px;
+            }
+        }
+    
+        @keyframes move-ltr {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
 }

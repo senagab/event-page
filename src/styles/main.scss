@@ -3,6 +3,7 @@
 @use 'components/buttons';
 @use 'event';
 @use 'variables';
+@use 'stripe';
 
 * {
     margin: 0;
