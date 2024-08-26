@@ -23,6 +23,13 @@
         background-image: linear-gradient(variables.$color2, variables.$color2);
     }
 
+    &__item {
+
+        &:last-child {
+            padding-bottom: 30px;
+        }
+    }
+
     &__image {
         max-width: 360px;
 
@@ -53,7 +60,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 25px;
+        font-size: 18px;
         letter-spacing: 5;
 
         &--friends {
