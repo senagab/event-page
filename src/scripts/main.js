@@ -114,6 +114,19 @@ class TextScramble {
     counter = (counter + 1) % phrases_title.length
     }
 
-
-
     next()
+
+
+// smooth scroll
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
