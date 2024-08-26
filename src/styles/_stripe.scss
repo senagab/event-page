@@ -40,7 +40,7 @@
             }
 
             &--rtl {
-                animation: move-rtl 6000ms linear infinite;
+                animation: move-rtl 4000ms linear infinite;
                 @include text(80px);
                 letter-spacing: 5px;
                 padding-top: 1rem;
