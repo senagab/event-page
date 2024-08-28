@@ -1,6 +1,6 @@
 @use 'variables';
 
-@mixin stripe-flex() {
+@mixin marquee-flex() {
     display: flex;
     background-color: variables.$secondaryTextColor;
     overflow: hidden;
@@ -14,10 +14,10 @@
     padding: 0 6rem;
 }
 
-.stripe {
+.marquee {
 
     &__wrapper{
-        @include stripe-flex;
+        @include marquee-flex;
 
         &--ltr {
             // padding-top: 1rem;
