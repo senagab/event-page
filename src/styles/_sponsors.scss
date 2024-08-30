@@ -1,0 +1,56 @@
+@use 'variables';
+
+.sponsors {
+    background-image: url(../images/sponsors/sponsors-background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // .container {
+    // }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7em 0 5em;
+
+        &__item {
+            font-family: 'Offbit';
+            font-size: 5.2em;
+            color: variables.$secondaryTextColor;
+            text-transform: uppercase;
+        }
+    }
+
+    &__list {
+        padding-bottom: 10em;
+
+        .brands {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: .2rem;
+            justify-items: center;
+            align-items: center;
+
+            &__item {
+                width: 150px;
+                object-fit: cover;
+    
+                a {
+
+                    &:hover {
+                        img {
+                            filter: invert(100%) sepia(67%) saturate(1015%) hue-rotate(27deg) brightness(86%) contrast(101%);
+                        }
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
