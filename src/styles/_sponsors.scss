@@ -54,3 +54,34 @@
         }
     }
 }
+
+@media (max-width: 640px) { // celular
+    .sponsors {
+
+        &__title {
+
+            &__item {
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+
+        &__list {
+            padding-bottom: 6em;
+
+            .brands {                
+                grid-template-columns: 1fr ;
+                row-gap: 3em;
+                column-gap: 0;
+
+                &__item {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) { // tablet
+    
+}
