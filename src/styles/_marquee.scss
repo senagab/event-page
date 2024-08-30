@@ -16,6 +16,17 @@
 
 .marquee {
 
+    a {
+        text-decoration: none;
+
+        &:hover {
+    
+            .marquee__wrapper__text {
+                filter: drop-shadow(0 0 0.75rem #e4ffa3);
+            }
+        }
+    }
+
     &__wrapper{
         @include marquee-flex;
         padding: 20px;
