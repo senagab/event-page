@@ -1,0 +1,69 @@
+@use 'variables';
+
+.second-hero {
+
+    background-image: url(../images/second-hero/top-brackground.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    position: relative;
+
+    &__top {
+
+        background-image: url(../images/second-hero/top-brackground.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10em 0 5em;
+
+            .subtitle {
+                font-family: 'Offbit';
+                font-size: 2em;
+            }
+
+            .title {
+                font-family: 'Offbit';
+                font-size: 4em;
+            }
+        }
+    }
+
+    &__bottom {
+        background-image: url(../images/second-hero/bottom-background.svg);
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 99;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10em 0 10em;
+
+            .title {
+                color: variables.$secondaryTextColor;
+                font-family: 'Offbit';
+                font-size: 4em;
+            }
+
+            .subtitle {
+                color: variables.$secondaryTextColor;
+                font-family: 'Offbit';
+                font-size: 2em;
+
+                .link {
+                    color: variables.$secondaryTextColor;
+                    font-family: 'Offbit';
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
