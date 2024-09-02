@@ -9,21 +9,16 @@
         display: flex;
         gap: 500px;
 
-        
-        // exception
-        // &__item > .detail > img:last-child {
-        //     transform: scale(-1 ,1);
-        // }
-
         &__item {
             padding: 2px 5px;
             border: 1px solid transparent;
             font-size: 14px;
             color: variables.$textColor;
             position: relative;
+            font-family: 'Offbit';
 
             &:hover {
-                border: 1px solid #C8FF62;
+                border: 1px solid variables.$green;
 
                 .detail {
                     visibility: visible;
@@ -52,10 +47,32 @@
                     width: 250px;
                 }
 
+                &__text {
+                    position: absolute;
+                    color: variables.$green;
+                    font-size: 15px;
+
+                    &--location {
+                        top: -20px;
+                        left: 215px;
+                    }
+
+                    &--price {
+                        top: -20px;
+                        left: 185px;
+                    }
+
+                    &--when {
+                        top: -20px;
+                        left: 0;
+                    }
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    filter: invert(86%) sepia(45%) saturate(530%) hue-rotate(26deg) brightness(102%) contrast(105%);
                 }
             }
 

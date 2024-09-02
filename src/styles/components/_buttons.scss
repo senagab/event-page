@@ -15,8 +15,8 @@
     }
 
     &:hover {
-        background-color: variables.$purple;
-        color: variables.$textColor;
+        background-color: variables.$green;
+        // color: variables.$textColor;
     }
 
     @media (max-width: 640px) { // celular
