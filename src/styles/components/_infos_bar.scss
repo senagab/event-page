@@ -1,7 +1,7 @@
 @use '../variables';
 
 .infos-bar {
-    padding: 16px 24px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 
@@ -9,12 +9,54 @@
         display: flex;
         gap: 500px;
 
+        
+        // exception
+        // &__item > .detail > img:last-child {
+        //     transform: scale(-1 ,1);
+        // }
+
         &__item {
+            padding: 2px 5px;
+            border: 1px solid transparent;
             font-size: 14px;
             color: variables.$textColor;
+            position: relative;
+
+            &:hover {
+                border: 1px solid #C8FF62;
+
+                .detail {
+                    visibility: visible;
+                }
+            }
 
             .detail {
-                display: none;
+                visibility: hidden;
+                position: absolute;
+
+                &--location {
+                    top: -37px;
+                    left: 45px;;
+                    width: 250px;
+                }
+
+                &--price {
+                    top: -37px;
+                    left: 30px;;
+                    width: 250px;
+                }
+
+                &--when {
+                    top: -37px;
+                    left: -230px;;
+                    width: 250px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
             b {
