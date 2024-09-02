@@ -2,18 +2,20 @@
 
 .infos-bar {
     padding: 16px 24px;
-    background-color: variables.$background;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__infos {
-
         display: flex;
-        gap: 40px;
+        gap: 500px;
 
         &__item {
             font-size: 14px;
             color: variables.$textColor;
+
+            .detail {
+                display: none;
+            }
 
             b {
                 color: variables.$textColor;
