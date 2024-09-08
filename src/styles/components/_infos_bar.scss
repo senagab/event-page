@@ -18,7 +18,7 @@
             font-family: 'Offbit';
 
             &:hover {
-                // border: 1px solid variables.$green;
+                border: 1px solid variables.$green;
 
                 .detail {
                     visibility: visible;
@@ -107,7 +107,7 @@
 }
 
 // Basic styles
-button {
+.button {
     background: none;
     border: 0;
     box-sizing: border-box;
@@ -115,8 +115,8 @@ button {
     padding: 1em 2em;
 
     // Using inset box-shadow instead of border for sizing simplicity
-    box-shadow: inset 0 0 0 2px red;
-    color: red;
+    box-shadow: inset 0 0 0 2px white;
+    color: white;
     font-size: inherit;
     font-weight: 700;
 
@@ -134,7 +134,7 @@ button {
     }
 }
 
-.border-animation {
+.button-animation {
     transition: color 0.25s;
 
     &::before,
@@ -158,7 +158,7 @@ button {
     }
 
     &:hover {
-        color: red;
+        color: variables.$green;
     }
 
     // Hover styles
