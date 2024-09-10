@@ -103,6 +103,7 @@
 
         .container {
             display: block;
+            margin-bottom: 4.5em;
         }
 
         &__details {
@@ -115,6 +116,7 @@
 
         &__image {
             width: 100%;
+            margin-bottom: 1em;
         }
     }
 }
