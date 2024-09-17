@@ -95,6 +95,10 @@
 
             &__item {
                 margin: 10px;
+
+                .detail {
+                    visibility: visible;
+                }
             }
         }
 
