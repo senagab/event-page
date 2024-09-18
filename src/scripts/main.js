@@ -105,7 +105,7 @@ class TextScramble {
     'we`re',
     'having',
     'a fire',
-    'are you in?'
+    'you in?'
     ]
 
     const title = document.querySelector('.event__title__item')
