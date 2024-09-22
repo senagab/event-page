@@ -96,9 +96,45 @@
 
             &__item {
                 margin: 10px;
+                border: 1px solid variables.$green;
 
                 .detail {
                     visibility: visible;
+
+                    img {
+                        width: 60%;
+                    }
+
+                    &--location {
+                        top: -25px;
+                        left: 45px;
+                        width: 250px;
+                    }
+
+                    &--price {
+                        top: -25px;
+                        left: 30px;
+                        width: 250px;
+                    }
+
+                    &--when {
+                        top: -25px;
+                        left: -120px;
+                        width: 250px;
+                    }
+
+                    &__text {
+
+                        &--location {
+                            top: -20px;
+                            left: 115px;
+                        }
+
+                        &--price {
+                            top: -20px;
+                            left: 90px;
+                        }
+                    }
                 }
             }
         }
