@@ -43,9 +43,16 @@
         
         padding: 40px 0;
 
-        // &__logo {
-        //     height: 40px;
-        // }
+        &__container {
+
+            &__title {
+
+                &__item {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
 
         &__text {
             font-size: 22px;
