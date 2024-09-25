@@ -26,26 +26,26 @@
             }
 
             .detail {
-                visibility: hidden;
+                visibility: visible;
                 position: absolute;
 
-                &--location {
-                    top: -37px;
-                    left: 45px;;
-                    width: 250px;
-                }
+                // &--location {
+                //     top: -37px;
+                //     left: 45px;;
+                //     width: 250px;
+                // }
 
-                &--price {
-                    top: -37px;
-                    left: 30px;;
-                    width: 250px;
-                }
+                // &--price {
+                //     top: -37px;
+                //     left: 30px;;
+                //     width: 250px;
+                // }
 
-                &--when {
-                    top: -37px;
-                    left: -230px;;
-                    width: 250px;
-                }
+                // &--when {
+                //     top: -37px;
+                //     left: -230px;;
+                //     width: 250px;
+                // }
 
 
                 &__text {
@@ -53,27 +53,50 @@
                     color: variables.$green;
                     font-size: 15px;
 
-                    &--location {
-                        top: -20px;
-                        left: 215px;
-                    }
+                    // &--location {
+                    //     top: -20px;
+                    //     left: 215px;
+                    // }
 
-                    &--price {
-                        top: -20px;
-                        left: 185px;
-                    }
+                    // &--price {
+                    //     top: -20px;
+                    //     left: 185px;
+                    // }
 
-                    &--when {
-                        top: -20px;
-                        left: 0;
-                    }
+                    // &--when {
+                    //     top: -20px;
+                    //     left: 0;
+                    // }
                 }
 
-                img {
+                &__image {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
-                    filter: invert(86%) sepia(45%) saturate(530%) hue-rotate(26deg) brightness(102%) contrast(105%);
+                    // object-fit: cover;
+                    // filter: invert(86%) sepia(45%) saturate(530%) hue-rotate(26deg) brightness(102%) contrast(105%);
+                    
+                    background-image: url("../images/arrow.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    &--location {
+                        top: -37px;
+                        left: 45px;;
+                        width: 250px;
+                    }
+    
+                    &--price {
+                        top: -37px;
+                        left: 30px;;
+                        width: 250px;
+                    }
+    
+                    &--when {
+                        top: -37px;
+                        left: -230px;;
+                        width: 250px;
+                    }
                 }
             }
 
