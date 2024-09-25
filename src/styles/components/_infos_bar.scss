@@ -26,26 +26,30 @@
             }
 
             .detail {
-                visibility: visible;
+                visibility: hidden;
                 position: absolute;
 
-                // &--location {
-                //     top: -37px;
-                //     left: 45px;;
-                //     width: 250px;
-                // }
+                img {
+                    width: 80%;
+                }
 
-                // &--price {
-                //     top: -37px;
-                //     left: 30px;;
-                //     width: 250px;
-                // }
+                &--location {
+                    top: -37px;
+                    left: 45px;;
+                    width: 250px;
+                }
 
-                // &--when {
-                //     top: -37px;
-                //     left: -230px;;
-                //     width: 250px;
-                // }
+                &--price {
+                    top: -37px;
+                    left: 30px;;
+                    width: 250px;
+                }
+
+                &--when {
+                    top: -37px;
+                    left: -170px;;
+                    width: 250px;
+                }
 
 
                 &__text {
@@ -53,20 +57,20 @@
                     color: variables.$green;
                     font-size: 15px;
 
-                    // &--location {
-                    //     top: -20px;
-                    //     left: 215px;
-                    // }
+                    &--location {
+                        top: -20px;
+                        left: 215px;
+                    }
 
-                    // &--price {
-                    //     top: -20px;
-                    //     left: 185px;
-                    // }
+                    &--price {
+                        top: -20px;
+                        left: 135px;
+                    }
 
-                    // &--when {
-                    //     top: -20px;
-                    //     left: 0;
-                    // }
+                    &--when {
+                        top: -20px;
+                        left: 0;
+                    }
                 }
 
                 &__image {
@@ -164,6 +168,17 @@
                         &--when {
                             top: -20px;
                             left: 0px;
+                        }
+                    }
+
+                    &__image {
+
+                        &--location {
+                            transform: scale(-1 ,1);
+                        }
+
+                        &--when {
+                            transform: scale(-1 ,1);
                         }
                     }
                 }
