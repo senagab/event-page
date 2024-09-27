@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataDoEvento = new Date("May 20, 2025 19:00:00");
+const dataDoEvento = new Date("May 20, 2024 19:00:00");
 const timeStampEvento = dataDoEvento.getTime();
 
 const contaHoras = setInterval(function () {
@@ -25,11 +25,11 @@ const contaHoras = setInterval(function () {
         ". minutos: ", minutosAteEvento, 
         ". segundos: ", segundosAteEvento, ".");
 
-        document.getElementById('counter').innerHTML = `in ${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`
+        document.getElementById('counter').innerHTML = `starts in ${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`
 
         if (diasAteEvento < 0) {
             clearInterval(contaHoras);
-            document.getElementById('counter').innerHTML = `next time!`
+            document.getElementById('counter').innerHTML = `happens next year. Date available soon!`
         }
 }, 1000);
 
