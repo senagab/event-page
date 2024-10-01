@@ -93,6 +93,53 @@
     
     .second-hero {
 
+        &__top {
+
+            &__title {
+
+                &__col {
+
+                    .sparkle {
+                        width: 45px;
+                        height: 100%;
+                    }
+
+                    &--center {
+
+                        .subtitle {
+                            font-family: Offbit;
+                            font-size: 1em;
+                            /* letter-spacing: 10px; */
+                            text-align: center;
+                            margin-bottom: 10px;
+                            line-height: 1.5em;
+                        }
+
+                        .title {
+                            text-align: center;
+                            font-size: 3.5em;
+                            // letter-spacing: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+            
+
+            &__title {
+
+                .title {
+                    text-align: center;
+                    font-size: 3.5em;
+                }
+
+                .subtitle {
+                    font-size: 1em;
+                }
+            }
+        }
     }
 
 }
