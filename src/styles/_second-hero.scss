@@ -88,6 +88,18 @@
     }
 }
 
+@media (max-width: 1024px) { // tablet
+    .second-hero {
+
+        &__top {
+
+            &__title {
+                text-align: center;
+            }
+        }
+    }
+}
+
 
 @media (max-width: 640px) { // celular
     
@@ -116,7 +128,7 @@
                         }
 
                         .title {
-                            text-align: center;
+                            // text-align: center;
                             font-size: 3.5em;
                             // letter-spacing: 10px;
                         }
