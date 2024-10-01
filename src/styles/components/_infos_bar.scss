@@ -122,14 +122,15 @@
             align-items: center;
 
             &__item {
-                margin: 10px;
-                // border: 1px solid variables.$green;
+                margin: 10px 10px 35px 10px;
+                border: 1px solid variables.$green;
 
                 b {
                     font-size: 1.5em;
                 }
 
                 .detail {
+                    visibility: visible;
 
                     img {
                         width: 50%;
@@ -137,13 +138,17 @@
 
                     &--location {
                         top: -25px;
-                        left: -85px;
+                        left: -110px;
                         width: 250px;
+
+                        img {
+                            transform: scale(-1,1);
+                        }
                     }
 
                     &--price {
                         top: -25px;
-                        left: 30px;
+                        left: 60px;
                         width: 250px;
                     }
 
