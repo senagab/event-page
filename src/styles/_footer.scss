@@ -1,17 +1,18 @@
 @use 'variables';
 
 .footer {
-    background-color: variables.$secondaryTextColor;h
+    background-color: variables.$secondaryTextColor;
 
     &__container {
-        padding: 30px;
+        padding: 15px 40px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &__text {
-            color: red;
-            font-size: 310px;
+            color: variables.$textColor !important;
+            font-size: 15px;
+            font-weight: 400;
         }
     }
 }
