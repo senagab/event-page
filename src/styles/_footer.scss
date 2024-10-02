@@ -1,10 +1,17 @@
 @use 'variables';
 
 .footer {
-    background-color: variables.$secondaryTextColor;
-    color: variables.$textColor;
+    background-color: variables.$secondaryTextColor;h
 
-    .container {
-        
+    &__container {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+            color: red;
+            font-size: 310px;
+        }
     }
 }
