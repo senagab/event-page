@@ -31,10 +31,6 @@
         @include marquee-flex;
         padding: 20px;
 
-        &--ltr {
-            // padding-top: 1rem;
-        }
-
         &__text {
             display: flex;
             align-items: baseline;

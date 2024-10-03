@@ -15,4 +15,19 @@
             font-weight: 400;
         }
     }
+
+    @media (max-width: 640px) {
+        // background-color: red;
+        
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__text {
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+    }
 }
