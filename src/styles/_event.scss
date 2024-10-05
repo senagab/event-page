@@ -8,19 +8,19 @@
     }
 
     &--friends {
-        background-image: linear-gradient(variables.$color2, variables.$color2);
+        background-image: linear-gradient(variables.$dark, variables.$color1);
     }
 
     &--drinks {
-        background-image: linear-gradient(variables.$color2, variables.$color2);
+        background-image: linear-gradient(variables.$color1, variables.$dark);
     }
 
     &--food {
-        background-image: linear-gradient(variables.$color2, variables.$color2);
+        background-image: linear-gradient(variables.$dark, variables.$color1);
     }
 
     &--music {
-        background-image: linear-gradient(variables.$color2, variables.$color2);
+        background-image: linear-gradient(variables.$color1, variables.$secondaryTextColor);
     }
 
     &__item {
@@ -62,7 +62,7 @@
         align-items: center;
         font-size: 18px;
         letter-spacing: 5;
-        color: variables.$light;;
+        color: variables.$light;
 
         &--friends {
             transform: rotate(2deg);
