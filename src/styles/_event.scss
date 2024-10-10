@@ -35,24 +35,49 @@
 
         &--friends {
             transform: rotate(2deg);
+
+            &:hover {
+                transform: rotate(4deg);
+                transition: 300ms ease all;
+            }
         }
 
         &--drinks {
             transform: rotate(-2deg);
+
+            &:hover {
+                transform: rotate(-4deg);
+                transition: 300ms ease all;
+            }
         }
 
         &--food {
             transform: rotate(2deg);
+
+            &:hover {
+                transform: rotate(4deg);
+                transition: 300ms ease all;
+            }
         }
 
         &--music {
             transform: rotate(-2deg);
+
+            &:hover {
+                transform: rotate(-4deg);
+                transition: 300ms ease all;
+            }
         }
     }
 
     &--image-left {
         .container {
             flex-direction: row-reverse;
+
+            &:hover {
+                transform: rotate(4deg);
+                transition: 300ms ease all;
+            }
         }
     }
 
