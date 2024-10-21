@@ -2,6 +2,8 @@
 
 This project is a dynamic, visually engaging website designed to promote an exclusive party in Brazil. It highlights essential event information like location, pricing, and date, presented in an organized, modern layout.
 
+![Screenshot Home]([https://github.com/senagab/servidores-estaticos/blob/main/contra.png](https://github.com/senagab/servidores-estaticos/blob/main/Event%20Page%20(2).png))
+
 ## Key Features
 
 - **Responsive Design:** The page is optimized for all devices with a mobile-first approach, ensuring an accessible and seamless user experience.
