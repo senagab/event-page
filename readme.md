@@ -10,6 +10,7 @@
     <img src="https://img.shields.io/badge/lenis-v1.1.11-e14b5a" alt="Lenis">
     </img> 
 </p>
+<br>
 
 This project is a dynamic, visually engaging website designed to promote an exclusive party in Brazil. It highlights essential event information like location, pricing, and date, presented in an organized, modern layout.
 
