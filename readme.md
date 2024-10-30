@@ -2,7 +2,7 @@
 
 This project is a dynamic, visually engaging website designed to promote an exclusive party in Brazil. It highlights essential event information like location, pricing, and date, presented in an organized, modern layout.
 
-![Screenshot Home](https://github.com/senagab/servidores-estaticos/blob/main/Event%20Page%20(2).png)
+![Screenshot Home](https://github.com/senagab/servidores-estaticos/blob/main/event_page-layout.png)
 
 ## Key Features
 
